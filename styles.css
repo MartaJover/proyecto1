@@ -5,7 +5,7 @@
 :root {
   /* Colores principales */
   --primary: #2c3e50;
-  --secondary: #e74c3c;
+  --secondary: pink;
   --accent: purple;
   --highlight: #f39c12;
   --success: #27ae60;
@@ -75,7 +75,95 @@
   align-items: flex-start;
   padding: var(--spacing-2xl) var(--spacing-lg);
   max-width: 1200px;
+}
 
+.about-section h1{
+  font-size: var(--fs-4xl);
+  font-weight: var(--font-bold);
+  color: var(--primary);
+  margin-bottom: var(--spacing-sm);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 3px solid var(--secondary);
+  text-align: left;
+}
+
+.about-intro {
+  color: var(--grey);
+  margin-bottom: var(--spacing-xl);
+  text-align: left;
+  font-size: var(--fs-lg);
+  font-weight: var(--font-regular);
+}
+
+.about-bio{
+  display: flex;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-2xl);
+  width: 100%;
+}
+
+.about-photo{
+  flex: 0 0 350px;
+  background-color: var(--white);
+  padding: var(--spacing-md);
+  padding-bottom: var(2xl);
+  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-sm);
+}
+
+.about-photo img{
+  width: 100%;
+  display: block;
+}
+
+.polaroid-caption{
+  margin: 0;
+  margin-top: var(--spacing-sm);
+  text-align: center;
+  font-size: 54px;
+  font-weight: var(--font-black);
+  background: linear-gradient(135deg, var(--accent) 0%, #2c3e50 50%, #19c4c2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transform: rotate(-2deg);
+  border-top: 3px solid var(--accent);
+  border-bottom: 3px solid var(--accent);
+}
+
+.about-info{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.about-info h3{
+  font-size: var(--fs-3xl);
+  font-weight: var(--font-black);
+  color: var(--primary);
+  margin: 0;
+}
+
+.about-info h4{
+  font-size: var(--fs-xl);
+  font-weight: var(--font-bold);
+  color: var(--accent);
+  margin: 0;
+}
+
+.about-info p {
+  color: var(--grey-dark);
+  line-height: 1.8;
+}
+
+.about-buttons {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
 }
 
 .contact-container {
