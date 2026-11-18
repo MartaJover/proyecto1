@@ -73,8 +73,10 @@
   display: none;
 }
 
-.nav-links.is-open{
+.nav-links.abierto{
   display: flex;
+  background-color: var(--white);
+  padding: var(--spacing-sm);
 }
 
 .about-section{
@@ -479,7 +481,7 @@ nav ul {
   .nav-links {
     display: none;
   }
-  .nav-links.is-open{
+  .nav-links.abierto{
     flex-direction: column;
     position: absolute;
     top: 100%;
