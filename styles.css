@@ -69,6 +69,14 @@
   --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
+.nav-links{
+  display: none;
+}
+
+.nav-links.is-open{
+  display: flex;
+}
+
 .about-section{
   display: flex;
   flex-direction: column;
