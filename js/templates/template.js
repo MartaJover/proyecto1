@@ -1,4 +1,3 @@
-// header
 const header = 
 `    <header>
 <nav class="navbar">
@@ -24,5 +23,5 @@ const header =
 </nav>
 </header>`
 
-
 const footer = `<footer></footer>`
+
