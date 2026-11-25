@@ -73,7 +73,7 @@
   display: none;
 }
 
-.nav-links.abierto{
+.nav-links.active{
   display: flex;
   background-color: var(--white);
   padding: var(--spacing-sm);
@@ -276,6 +276,9 @@
   width: 30px;
   height: 24px;
   cursor: pointer;
+  padding: 0;
+  border: none;
+  background: none;
 }
 
 .hamburger span {
@@ -481,7 +484,7 @@ nav ul {
   .nav-links {
     display: none;
   }
-  .nav-links.abierto{
+  .nav-links.active{
     flex-direction: column;
     position: absolute;
     top: 100%;
@@ -528,4 +531,112 @@ nav ul {
   70% {
     transform: scale(1);
   }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  --primary: #e0e0e0;
+  --grey-dark: #b0b0b0;
+  --grey: #888888;
+  --grey-light: #3a3a3a;
+  --white: #1e1e1e;
+  --background: #121212;
+    background-color: var(--background);
+    color: var(--primary);
+}
+
+body.dark-mode header{
+  background-color: #1e1e1e;
+  border-bottom-color: #333;
+}
+
+body.dark-mode .nav-links{
+  background-color: #1e1e1e;
+}
+
+body.dark-mode section{
+  background-color: transparent;
+}
+
+body.dark-mode .skill-card,
+body.dark-mode .project-card,
+body.dark-mode .cheatsheet-card,
+body.dark-mode .contact-container,
+body.dark-mode .experience-card,
+body.dark-mode .education-card,
+body.dark-mode .value-card {
+  background-color: #2a2a2a;
+  border-color: #3a3a3a;
+}
+
+body.dark-mode .about-photo {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode footer {
+  background-color: #1a1a1a;
+  border-top-color: #333;
+  color: #ffffff;
+}
+
+body.dark-mode footer a {
+  color: #ffffff;
+}
+
+body.dark-mode .btn-primary {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+body.dark-mode .btn-primary:hover {
+  background-color: #2980b9;
+}
+
+body.dark-mode .btn-secondary {
+  background-color: transparent;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+body.dark-mode .btn-secondary:hover {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #2a2a2a;
+  border-color: #3a3a3a;
+  color: var(--primary);
+}
+
+body.dark-mode input:focus,
+body.dark-mode textarea:focus {
+  border-color: var(--accent);
+}
+
+.moon-icon{
+  display: none;
+}
+
+.dark-mode .sun-icon{
+  display: none;
+}
+
+.dark-mode .moon-icon{
+  display: inline;
+}
+
+/* Animación hamburguesa activa */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(10.5px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-10.5px) rotate(-45deg);
 }

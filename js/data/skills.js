@@ -1,0 +1,95 @@
+const skills = [
+  // Dominadas
+  {
+    name: "HTML5",
+    icon: "https://cdn.simpleicons.org/html5/E34F26",
+    state: "dominada",
+    level: "avanzado",
+    description: "Estructura semántica y accesible para páginas y aplicaciones web.",
+    tags: ["HTML semántico", "Accesibilidad", "Formularios"],
+  },
+  {
+    name: "CSS",
+    icon: "https://cdn.simpleicons.org/css/663399",
+    state: "dominada",
+    level: "avanzado",
+    description: "Interfaces responsive con variables, Flexbox y animaciones.",
+    tags: ["Flexbox", "Responsive", "Animaciones"],
+  },
+  {
+    name: "JavaScript",
+    icon: "https://cdn.simpleicons.org/javascript/F7DF1E",
+    state: "dominada",
+    level: "intermedio",
+    description: "Interactividad en la web con módulos, eventos y manipulación del DOM.",
+    tags: ["ES6+", "DOM", "Eventos"],
+  },
+  {
+    name: "Git",
+    icon: "https://cdn.simpleicons.org/git/F05032",
+    state: "dominada",
+    level: "intermedio",
+    description: "Control de versiones para organizar los cambios de cada proyecto.",
+    tags: ["Commits", "Ramas", "Merge"],
+  },
+  {
+    name: "GitHub",
+    icon: "https://cdn.simpleicons.org/github/888888",
+    state: "dominada",
+    level: "intermedio",
+    description: "Repositorios remotos para publicar y compartir proyectos.",
+    tags: ["Repositorios", "Pull requests", "GitHub Pages"],
+  },
+  {
+    name: "Figma",
+    icon: "https://cdn.simpleicons.org/figma/F24E1E",
+    state: "dominada",
+    level: "avanzado",
+    description: "Diseño de interfaces y prototipos, desde el wireframe hasta la entrega.",
+    tags: ["UI", "Prototipado", "Componentes"],
+  },
+  {
+    name: "Miro",
+    icon: "https://cdn.simpleicons.org/miro/F2CA02",
+    state: "dominada",
+    level: "intermedio",
+    description: "Ideación y organización de la investigación con usuarios.",
+    tags: ["UX research", "User flows", "Ideación"],
+  },
+  {
+    name: "SEO",
+    icon: "https://cdn.simpleicons.org/googlesearchconsole/458CF5",
+    state: "dominada",
+    level: "intermedio",
+    description: "Contenido y estructura pensados para mejorar la visibilidad en buscadores.",
+    tags: ["SEO on-page", "Metadatos", "Contenido"],
+  },
+
+  // Aprendiendo: el filtro de skillsList.js no debe mostrarlas
+  {
+    name: "React",
+    icon: "https://cdn.simpleicons.org/react/61DAFB",
+    state: "aprendiendo",
+    level: "básico",
+    description: "Interfaces construidas con componentes reutilizables.",
+    tags: ["Componentes", "Props", "Hooks"],
+  },
+  {
+    name: "Node.js",
+    icon: "https://cdn.simpleicons.org/nodedotjs/5FA04E",
+    state: "aprendiendo",
+    level: "básico",
+    description: "JavaScript en el servidor para crear APIs.",
+    tags: ["Backend", "API REST", "npm"],
+  },
+  {
+    name: "MongoDB",
+    icon: "https://cdn.simpleicons.org/mongodb/47A248",
+    state: "aprendiendo",
+    level: "básico",
+    description: "Base de datos NoSQL orientada a documentos.",
+    tags: ["NoSQL", "Colecciones", "CRUD"],
+  },
+];
+
+export default skills;
